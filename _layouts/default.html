@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ site.title | default: site.github.repository_name }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <p><img src="assets/images/Longhorn.png" width=50px height=auto /></p>
+<!--         <p>{{ site.description | default: site.github.project_tagline }}</p> -->
+
+        <p><a href="https://www.linkedin.com/in/jonathanong/" target="_blank">Linkedin</a></p>
+
+      </header>
+      <section>
+
+      {{ content }}
+
+      <p id="resumepic"><img src="assets/images/resume.pdf" width=100% height=auto /></p>
+
+      </section>
+      <footer>
+        <p><small>2017</small></p>
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+
+  </body>
+</html>
