@@ -54,6 +54,14 @@ a:hover small {
   color:#777;
 }
 
+#nonlink {
+  color:#777;
+}
+
+#nonlink:hover {
+  color:#222;
+}
+
 .wrapper {
   width:1100px;
   margin:0 auto;
@@ -102,6 +110,10 @@ th {
 
 img {
   max-width:100%;
+}
+
+img[alt=portfolioimg] {
+  width:50%
 }
 
 header {
