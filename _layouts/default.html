@@ -7,33 +7,102 @@
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <script type="text/javascript" src="default.js"></script>
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <p><img src="assets/images/Longhorn.png" width=50px height=auto /></p>
-<!--         <p>{{ site.description | default: site.github.project_tagline }}</p> -->
+      <nav>
+        <a href="index.html" id="logo"><img src="assets/images/kp_logo.png" /></a>
+        <a href="#productanchor">M E N</a>
+        <a href="#lifestyleanchor">L I F E S T Y L E</a>
+        <a href="#">A B O U T</a>
+        <a href="#">B L O G</a>
+        <div href="#" id="navbar_right">
+          <a href="#"><img class="socialmedia" src="/assets/images/facebooklogo.png" /></a>
+          <a href="#"><img class="socialmedia" src="/assets/images/instagramlogo.png" /></a>
+        </div>
+      </nav>
+      
+      <a href="#">
+        <div class="signupbutton">
+          <img src="/assets/images/signupicon.png" />
+        </div>
+      </a>
 
-        <p><a href="index.html" id="nonlink">Resume</a></p>
-        <p><a href="portfolio.html" id="nonlink">Portfolio</a></p>
-        <p><a href="https://www.linkedin.com/in/jonathanong/" id="nonlink" target="_blank">Linkedin</a></p>
-        <p><a href="mailto:jonong@utexas.edu" id="nonlink">Contact</a></p>
-
+      <header>        
+        <div class="landing">
+          <div class="banner">
+            <p id="callout1">S U M M E R &nbsp I S &nbsp C O M I N G.</p>
+            <p id="callout2">S O &nbsp I S &nbsp O U R &nbsp S H O E.</p>
+          </div>
+        </div>
       </header>
-      <section>
-
-      {{ content }}
-
-      <p id="resumepic"><img src="assets/images/resume.png" width=100% height=auto /></p>
-
+      
+      <section id="homeaboutsection">
+        <a class="anchor" id="aboutanchor"></a>
+        <div class="homeabout">
+          <div class="graybox">
+            <div class="homeabouttext">
+              <p class="homeabouttitle">Find Your Sole-Mate.</p>
+              <p class="homeaboutfont"><br>Cool enough for your summer barbecue, good-looking enough to turn heads. And yes, go ahead and wear them on casual fridays at the office.<br><br>Summer is coming. Get your battle sandals.</p>
+              <a href=#>
+                <div class="learnmorebutton"><p>Learn More</p></div>
+              </a>
+            </div>
+            <img class="homeaboutpic" src="/assets/images/topviewshoe.png" />
+          </div>
+        </div>
       </section>
-      <footer>
-        <p><small>Updated 010317</small></p>
-      </footer>
+
+      <section id="productpage">
+        <a class="anchor" id="productanchor"></a>
+        <div class="product">
+          <div class="productshot">
+            <img id="main" src="/assets/images/products/shoe1.jpg" />
+          </div>
+          <div class="productscroll">
+            <a href="/assets/images/products/shoe1.jpg" onclick="swap(this); return false;"><img src="/assets/images/circleicon1.png" class="selector" /></a>
+            <a href="/assets/images/products/shoe2.jpg" onclick="swap(this); return false;"><img src="/assets/images/circleicon1.png" class="selector" /></a>
+            <a href="/assets/images/products/shoe3.jpg" onclick="swap(this); return false;"><img src="/assets/images/circleicon1.png" class="selector" /></a>
+            <a href="/assets/images/products/shoe4.jpg" onclick="swap(this); return false;"><img src="/assets/images/circleicon1.png" class="selector" /></a>
+            <a href="/assets/images/products/shoe5.jpg" onclick="swap(this); return false;"><img src="/assets/images/circleicon1.png" class="selector" /></a>
+          </div>
+        </div>
+        <div class="producttext">
+          <p class="producttitle">The Lazy Saturday</p>
+          <p class="productsubtitle">Men's - $ 90 USD (Coming Soon)</p>
+          <p class="productdesctitle">DESCRIPTION</p>
+          <p class="productdescription">Your new weekend shoe. We borrowed the woven upper of a Mexican huarache sandal and combined it with the sillhouette of an English slipper and the outsole of a boat shoe. Because casual should still turn heads.</p>
+          <p class="productdesctitle">MATERIALS</p>
+          <ul class="productdescription">
+            <li>Upper: 100% Vegetable-Tanned Leather</li>
+            <li>Insole: 100% Vachetta Leather</li>
+            <li>Midsole: EVA Foam</li>
+            <li>Outsole: Rubber</li>
+          </ul>
+          <a href=#>
+            <div class="preorderbutton"><p>Pre-Order Now</p></div>
+          </a>
+        </div>
+      </section>
+      <section id="lifestyle">
+        <a class="anchor" id="lifestyleanchor"></a>>
+        <img src="/assets/images/lifestyle_small/lifestylesmall1.jpg" />
+        <img src="/assets/images/lifestyle_small/lifestylesmall2.jpg" />
+        <img src="/assets/images/lifestyle_small/lifestylesmall3.jpg" />
+        <img src="/assets/images/lifestyle_small/lifestylesmall4.jpg" />
+        <img src="/assets/images/lifestyle_small/lifestylesmall5.jpg" />
+        <img src="/assets/images/lifestyle_small/lifestylesmall6.jpg" />
+        <img src="/assets/images/lifestyle_small/lifestylesmall7.jpg" />
+        <img src="/assets/images/lifestyle_small/lifestylesmall8.jpg" />
+        <img src="/assets/images/lifestyle_small/lifestylesmall9.jpg" />
+        <img src="/assets/images/lifestyle_small/lifestylesmall10.jpg" />
+        <img src="/assets/images/lifestyle_small/lifestylesmall11.jpg" />
+      </section>
+      
+<!--       <footer>
+        <p><small>&copy; 2017 Kit & Port</small></p>
+      </footer> -->
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 

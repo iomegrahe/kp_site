@@ -3,8 +3,9 @@
 
 body {
   background-color: #fff;
-  padding:50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin:0;
+  padding:0px;
+  font: 13px/1.5 "Pangram Medium", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
 }
@@ -23,7 +24,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:35px;
 }
 
 h2 {
@@ -63,7 +64,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:1100px;
+  width:100%;
   margin:0 auto;
 }
 
@@ -116,14 +117,15 @@ img[alt=portfolioimg] {
   width:75%
 }
 
-header {
-  width:270px;
-  float:left;
-  position:fixed;
+/*header {
+  width:100%;
+  height:auto;
+  float:top;
+  position:relative;
   -webkit-font-smoothing:subpixel-antialiased;
-}
+}*/
 
-header ul {
+/*header ul {
   list-style:none;
   height:40px;
   padding:0;
@@ -180,17 +182,322 @@ header ul a strong {
   font-size:14px;
   display:block;
   color:#222;
+}*/
+
+nav {
+  width:100%;
+  height:auto;
+  float:top;
+  position:fixed;
+  -webkit-font-smoothing:subpixel-antialiased;
+  text-align:left;
+  background-color:white;
+  opacity:0.99;
+  -moz-box-shadow: 0px 0.5px 2px rgba(114, 114, 114, 0.5);
+  -webkit-box-shadow: 0px 0.5px 2px rgba(114, 114, 114, 0.5);
+  box-shadow: 0px 0.5px 2px rgba(114, 114, 114, 0.5);
+  z-index:100;
+}
+
+#logo {
+  display:inline-block;
+  vertical-align:top;
+  width:100px;
+  height:auto;
+  margin:15px 35px 15px 35px;
+  /*content:url("/assets/images/kp_logowhite.png");*/
+
+}
+
+nav > a {
+  display:inline-block;
+  vertical-align:top;
+  margin-left:35px;
+  margin-right:35px;
+  margin-top:45px;
+  height:30px;
+  color:#727272;
+  /*color:#FFF;*/
+}
+
+nav > a:hover {
+  color:#000;
+}
+
+/*nav:hover {
+  background-color:white;
+  opacity:0.99;
+  -moz-box-shadow: 0px 0.5px 2px rgba(114, 114, 114, 0.5);
+  -webkit-box-shadow: 0px 0.5px 2px rgba(114, 114, 114, 0.5);
+  box-shadow: 0px 0.5px 2px rgba(114, 114, 114, 0.5);
+  color:#727272;
+}
+
+nav:hover > #logo {
+  content:url("/assets/images/kp_logo.png");
+}
+
+nav:hover > a {
+  color:#727272;
+}*/
+
+#navbar_right {
+  display:inline-block;
+  float:right;
+  text-align:right;
+  width:200px;
+  vertical-align:top;
+  margin-top:45px;
+  margin-right:35px;
+}
+
+.socialmedia {
+  width:20px;
+  height:auto;
+  margin-left:10px;
+}
+
+.signupbutton {
+  position:fixed;
+  bottom:2%;
+  right:1%;
+  width: 60px;
+  height: 60px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  opacity:0.5;
+}
+
+.signupbutton:hover {
+  opacity:1.0;
 }
 
 section {
-  width:800px;
-  float:right;
-  padding-bottom:50px;
+  width:100%;
+  position:top;
+  padding-bottom:0px;
 }
 
-#resumepic {
-  border:1px solid rgb(229, 229, 229);
-  box-shadow:4px 4px 3px rgb(229, 229, 229);
+.landing {
+  width:100%;
+  height:740px;
+  display:table;
+  background:url("../images/bg1.jpg") no-repeat center center scroll;
+  background-size:cover;
+  background-position:0px -100px;
+}
+
+.landing img {
+  width:100%;
+  margin-top:-200px;
+}
+
+.landing #callout1 {
+  font-family:"Pier Medium";
+  font-size:35px;
+  color:#FFF;
+}
+
+.landing #callout2 {
+  font-family:"Pier Medium";
+  font-size:25px;
+  color:#FFF;
+  margin-top:-10px;
+}
+
+.banner {
+  display:table-cell;
+  text-align:center;
+  vertical-align:bottom;
+  padding-bottom:30px;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.homeabout {
+  display:flex;
+  align-items:center;
+  width:100%;
+  height:700px;
+  position:relative;
+/*  border:3px solid black;*/
+}
+
+.graybox {
+  position:relative;
+  width:90%;
+  height:500px;
+  margin:0 auto;
+  background-color:#F6F6F6;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+/*  border:3px solid red;*/
+}
+
+.homeabouttext {
+  margin-left:10%;
+  width:40%;
+  text-align:center;
+  /*border:3px solid red;*/
+}
+
+.homeabouttext .homeabouttitle {
+  font-family:"NeueHansKendrick";
+  font-size:40px;
+  color:#393939;
+}
+
+.homeabouttext .homeaboutfont {
+  font-family:"Pangram Light";
+  font-size:20px;
+  color:#727272;
+}
+
+.learnmorebutton {
+  display:table;
+  color:#FFF;
+  background-color:#727272;
+  width:100%;
+  height:50px;
+  text-align:center;
+  margin-top:15%;
+}
+
+.learnmorebutton:hover {
+  background-color:#000;
+}
+
+.learnmorebutton p {
+  display:table-cell;
+  vertical-align:middle;
+  font-family:"NeueHansKendrick";
+  font-size:15px;
+}
+
+.homeaboutpic {
+  position:absolute;
+  left:75%;
+  /*float:right;*/
+  height:80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product {
+  display:inline-block;
+  width:55%;
+  height:auto;
+  position:relative;
+  /*border:3px solid purple;*/
+}
+
+.selector {
+  display:inline-block;
+  width:10px;
+  margin-left:3px;
+  margin-right:3px;
+}
+
+.productshot {
+  margin-left: 20%;
+  /*border:3px solid black;*/
+}
+
+.productshot img {
+  padding-top:30px;
+  display:block;
+  margin:auto;
+  width:100%;
+}
+
+.productscroll {
+  padding-top:20px;
+  margin-left:20%;
+  text-align:center;
+  height:50px;
+  /*border:3px solid red;*/
+}
+
+.producttext {
+  position:relative;
+  display:inline-block;
+  float:right;
+  padding-top:70px;
+  margin-right:10%;
+  width:30%;
+  /*border:3px solid green;*/
+}
+
+.producttext .producttitle {
+  font-family:"NeueHansKendrick";
+  font-size:35px;
+  color:#393939;
+}
+
+.producttext .productsubtitle {
+  font-family:"NeueHansKendrick";
+  font-size:20px;
+  color:#727272;
+}
+
+.producttext .productdesctitle {
+  font-family:"Pangram Bold";
+  font-size:15px;
+  color:#393939;
+  margin:0;
+}
+
+.producttext .productdescription {
+  font-family:"Pangram Light";
+  font-size:15px;
+  color:#727272;
+}
+
+.preorderbutton {
+  display:table;
+  color:#FFF;
+  background-color:#d3d3d3;
+  width:100%;
+  height:50px;
+  text-align:center;
+  margin-top:15%;
+}
+
+.preorderbutton:hover {
+  background-color:#727272;
+}
+
+.preorderbutton p {
+  display:table-cell;
+  vertical-align:middle;
+  font-family:"NeueHansKendrick";
+  font-size:15px;
+}
+
+#lifestyle {
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap:0px;
+  -moz-column-count:4;
+  -moz-column-gap:0px;
+  column-count:4;
+  column-gap:0px;
+  height:auto;
+}
+
+#lifestyle img {
+  width:100%;
+  height:auto;
 }
 
 small {
@@ -205,9 +512,9 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
+  width:100%;
+  height:100px;
+  position:relative;
   bottom:50px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
